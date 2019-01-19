@@ -1,0 +1,61 @@
+1- git clone https://github.com/apereo/cas-overlay-template.git cas-server
+
+2- add additional dependencies in 
+
+	classpath "org.apereo.cas:cas-server-support-json-service-registry:5.3.2"
+		
+	classpath "org.apereo.cas:cas-server-support-jdbc:5.3.2"
+		
+	classpath "org.apereo.cas:cas-server-support-jdbc-drivers:5.3.2"
+
+3- add proxy configuration in gradle.properties (if needed)
+
+4- create the folder cas-server/src/main/resources
+
+5- copy the folder cas-server/etc. into it
+
+6- add application.properties in the cas-server/src/main/resources 
+
+7- add the following properties
+   
+server.port=6443
+server.context-path=/cas
+
+server.ssl.key-store=classpath:/etc/cas/thekeystore
+server.ssl.key-store-password=changeit
+server.ssl.key-password=changeit
+
+standalone.config=classpath:/etc/cas/config
+
+8- in the folder : cas-server/src/main/resources/etc/cas  execute the following commands (It’s important to use localhost when prompted for a first and last name)
+
+ 
+keytool -genkey -keyalg RSA -alias thekeystore -keystore thekeystore -storepass changeit -validity 360 -keysize 2048
+
+keytool -export -alias thekeystore -file thekeystore.crt -keystore thekeystore
+
+keytool -import -alias thekeystore -storepass changeit -file thekeystore.crt -keystore "C:\Program Files\Java\jdk1.8.0_102\jre\lib\security\cacerts"
+
+keytool -import -alias thekeystore -storepass changeit -file thekeystore.crt -keystore "C:\Program Files\Java\jre1.8.0_102\lib\security\cacerts"
+
+
+9- create a folder cas-server/src/main/resources/services and add the file casSecuredApp-19991.json
+
+{
+    "@class" : "org.apereo.cas.services.RegexRegisteredService",
+    "serviceId" : "^http://localhost:9090/login/cas",
+    "name" : "CAS Spring Secured App",
+    "description": "This is a Spring App that usses the CAS Server for it's authentication",
+    "id" : 19991,
+    "evaluationOrder" : 1
+}
+
+10- add in the application.properties
+
+cas.serviceRegistry.initFromJson=true
+cas.serviceRegistry.config.location=classpath:/services
+
+####################################################
+login (secured access to the endpoint) --> http://localhost:9090/api/greetings
+logout --> http://localhost:9090/logout/cas
+
