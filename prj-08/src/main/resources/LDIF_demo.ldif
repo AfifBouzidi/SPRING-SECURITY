@@ -1,0 +1,50 @@
+version: 1
+
+dn: ou=groups,dc=abouzidi,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: groups
+
+dn: uid=ali,ou=people,dc=abouzidi,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: ali
+sn: baba
+uid: ali
+userPassword:: e1NIQX1FdDZwYit3Z1dUVm1xM1ZwTEpsSldXZ3pyY2s9
+
+dn: dc=abouzidi,dc=com
+objectclass: top
+objectclass: domain
+dc: abouzidi
+
+dn: ou=people,dc=abouzidi,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: people
+
+dn: uid=afif,ou=people,dc=abouzidi,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: afif
+sn: afif bouzidi
+uid: afif
+userPassword:: e1NIQX1FdDZwYit3Z1dUVm1xM1ZwTEpsSldXZ3pyY2s9
+
+dn: cn=Admin,ou=groups,dc=abouzidi,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: Admin
+uniqueMember: uid=afif,ou=people,dc=abouzidi,dc=com
+
+dn: cn=User,ou=groups,dc=abouzidi,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: User
+uniqueMember: uid=ali,ou=people,dc=abouzidi,dc=com
+uniqueMember: uid=afif,ou=people,dc=abouzidi,dc=com
+
