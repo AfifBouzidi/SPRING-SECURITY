@@ -65,3 +65,6 @@ Enregistre les informations du Principal qui sont ensuite encapsulées dans l’
 
 - *User*  
 La classe User représente l'implémentation fourni par Spring de l'interface UserDetails  
+
+- *GrantedAuthority*  
+Cette interface représente une autorité accordée à un Principal, Spring fournit une implémentation: SimpleGrantedAuthority où le rôle  est une simple chaîne de caractère. 
