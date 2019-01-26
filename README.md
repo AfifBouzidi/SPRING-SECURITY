@@ -63,5 +63,5 @@ Enregistre les informations du Principal qui sont ensuite encapsulées dans l’
 |   boolean	isCredentialsNonExpired()|  Indique si les informations d'identification de l'utilisateur (mot de passe) ont expiré. |
 |  boolean	isEnabled() |  Indique si l'utilisateur est activé ou désactivé. |
 
-- *User* 
-La classe User Représente implémentation fourni par Spring 
+- *User*  
+La classe User Représente l'implémentation fourni par Spring 
