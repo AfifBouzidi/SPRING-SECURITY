@@ -64,4 +64,4 @@ Enregistre les informations du Principal qui sont ensuite encapsulées dans l’
 |  boolean	isEnabled() |  Indique si l'utilisateur est activé ou désactivé. |
 
 - *User*  
-La classe User Représente l'implémentation fourni par Spring 
+La classe User représente l'implémentation fourni par Spring de l'interface UserDetails  
