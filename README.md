@@ -51,7 +51,7 @@ Pour pouvoir construire les objets Authentication chaque Provider d’authentifi
 Spring security fournit une interface pour charger un utilisateur à partir de son identifiant principal, cette interface possède une seule méthode: ```UserDetails	loadUserByUsername(java.lang.String username)``` Spring fournit plusieurs implémentations : LdapUserDetailsService, InMemoryUserDetailsManager, JdbcDaoImpl... 
 
 - *UserDetails*
-Enregistre les informations du Principal qui sont ensuite encapsulées dans l’objet Authentication Spring fournit une implémentation: La classe User   
+Enregistre les informations du Principal qui sont ensuite encapsulées dans l’objet Authentication    
 
 |  Méthode |   | 
 |---|---|
@@ -62,3 +62,6 @@ Enregistre les informations du Principal qui sont ensuite encapsulées dans l’
 |  boolean	isAccountNonLocked() |Indique si l'utilisateur est verrouillé ou déverrouillé.   |
 |   boolean	isCredentialsNonExpired()|  Indique si les informations d'identification de l'utilisateur (mot de passe) ont expiré. |
 |  boolean	isEnabled() |  Indique si l'utilisateur est activé ou désactivé. |
+
+- *User* 
+La classe User Représente implémentation fourni par Spring 
