@@ -32,7 +32,7 @@ Chaque *AuthenticationProvider* invoqué soit il retourne un objet *Authenticati
 ![](https://github.com/AfifBouzidi/SPRING-SECURITY/blob/master/AuthenticationProvider.png)  
   
  - *Authentication*  
-Une interface qui représente les informations relatives à un Principal authentifié (ou à authentifier). Si l’authentification est réussie, cet objet est stocké pour pouvoir procéder à l’étape d’autorisation
+Une interface qui représente les informations relatives à un Principal authentifié (ou à authentifier). Si l’authentification est réussie, cet objet est stocké pour pouvoir procéder à l’étape d’autorisation.  Spring fournit un nombre d’implémentations de l'interface *Authentication* : UsernamePasswordAuthenticationToken, CasAuthenticationToken ...
  
 | Méthode  |   |
 |---|---|
@@ -43,5 +43,7 @@ Une interface qui représente les informations relatives à un Principal authent
 |   boolean	isAuthenticated()|  est-ce que le Principal est authentifié ou non  |
 |  void	setAuthenticated(boolean isAuthenticated)| valider ou non l’authentification  |
 
+
+ 
 
 
