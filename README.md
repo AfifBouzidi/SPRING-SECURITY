@@ -43,7 +43,9 @@ Une interface qui représente les informations relatives à un Principal authent
 |   boolean	isAuthenticated()|  est-ce que le Principal est authentifié ou non  |
 |  void	setAuthenticated(boolean isAuthenticated)| valider ou non l’authentification  |
 
+### Chargement de détail d’un Principal  
+Pour pouvoir construire les objets Authentication chaque Provider d’authentification doit avoir un service pour charger les détails d’un Principal. Par exemple le DaoAuthenticationProvider doit accéder à un base de donnée, le LdapAuthenticationProvider doit accéder un annuaire LDAP...   
 
- 
 
-
+ - *UserDetailsService*
+Spring security fournit une interface pour charger un utilisateur à partir de son identifiant principal, cette interface possède une seule méthode: ```UserDetails	loadUserByUsername(java.lang.String username)``` Spring offre plusieurs implémentations : LdapUserDetailsService, InMemoryUserDetailsManager, JdbcDaoImpl... 
