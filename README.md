@@ -73,3 +73,6 @@ Cette interface représente une autorité accordée à un Principal, Spring four
 Généralement et pour des raisons de sécurité le mot de passe n'est pas stocké en clair. Pour chaque utilisateur seule une hache est sauvegardée. L’authentification se fait en comparant les mots de passe hachés. 
 - *PasswordEncoder*  
 Représente une interface pour le codage des mots de passe, l’implémentation recommandée par Spring est la classe BCryptPasswordEncoder 
+
+![](https://github.com/AfifBouzidi/SPRING-SECURITY/blob/master/PasswordEncoder.PNG)  
+ref: https://www.researchgate.net
