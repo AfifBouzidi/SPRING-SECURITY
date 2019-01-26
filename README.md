@@ -30,8 +30,9 @@ Chaque *AuthenticationProvider* invoqué soit il retourne un objet *Authenticati
 ```Boolean supports (java.lang.Class<?> authentication)```: permet de vérifier si le provider est compatible avec l’objet *Authentication*. Spring fournit un nombre d’implémentations de l'interface *AuthenticationProvider* tels que : *DaoAuthenticationProvider*, *LdapAuthenticationProvider*...  
 
 ![](https://github.com/AfifBouzidi/SPRING-SECURITY/blob/master/AuthenticationProvider.png)  
-
-
+  
+ - *Authentication*  
+Une interface qui représente les informations relatives à un Principal authentifié (ou à authentifier). Si l’authentification est réussie, cet objet est stocké pour pouvoir procéder à l’étape d’autorisation
  
 
 
