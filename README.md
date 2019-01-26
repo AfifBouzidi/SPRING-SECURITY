@@ -70,3 +70,6 @@ La classe User représente l'implémentation fourni par Spring de l'interface Us
 Cette interface représente une autorité accordée à un Principal, Spring fournit une implémentation: SimpleGrantedAuthority où le rôle  est une simple chaîne de caractère. 
 
 ### Encodage de mots de passe
+Généralement et pour des raisons de sécurité le mot de passe n'est pas stocké en clair. Pour chaque utilisateur seule une hache est sauvegardée. L’authentification se fait en comparant les mots de passe hachés. 
+- *PasswordEncoder*  
+Représente une interface pour le codage des mots de passe, l’implémentation recommandée par Spring est la classe BCryptPasswordEncoder 
