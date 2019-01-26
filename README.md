@@ -9,8 +9,18 @@ Comprendre l’authentification via Spring sécurité revient à déterminer les
 - *ProviderManager*  
 - *AuthenticationProvider*
 - *Authentication* 
+- *UserDetailsService*
+- *UserDetails*
+- *User*
+- *GrantedAuthority*
+- *PasswordEncoder*
+- *SecurityContext*
+- *SecurityContextHolder* 
+- *Security Filter Chain*
 
-La relation entre ces briques de base est illustrée par le diagramme suivant:
+### L’authentification Manegr et l’authentification Provider 
+
+La relation entre ces deux briques de base est illustrée par le diagramme suivant:
 ![](https://github.com/AfifBouzidi/SPRING-SECURITY/blob/master/class%20diagram_1.png)
 - *AuthenticationManager* est une interface (avec une seule méthode) qui représente le point d’entrée du mécanisme de l’authentification 
 - *AuthenticationProvider* est l’implémentation par défaut de l’interface *AuthenticationManager*. L’implémentation est basée sur le design pattern chaîne de responsabilité, elle permet à un nombre quelconque de classes (implémentant l’interface *AuthenticationProvider*) d'essayer de répondre à la  requête d'authentification.  
