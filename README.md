@@ -18,7 +18,7 @@ Comprendre l’authentification via Spring sécurité revient à déterminer les
 - *SecurityContextHolder* 
 - *Security Filter Chain*
 
-### L’authentification Manegr et l’authentification Provider 
+### L’authentification Managr et l’authentification Provider 
 
 La relation entre ces deux briques de base est illustrée par le diagramme suivant:
 ![](https://github.com/AfifBouzidi/SPRING-SECURITY/blob/master/class%20diagram_1.png)
