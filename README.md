@@ -28,6 +28,9 @@ Chaque *AuthenticationProvider* invoqué soit il retourne un objet *Authenticati
 - *AuthenticationProvider* est interface avec deux méthodes :  
 ```Authentication authenticate (Authentication authentication) throws AuthenticationException```  
 ```Boolean supports (java.lang.Class<?> authentication)```: permet de vérifier si le provider est compatible avec l’objet *Authentication*  
+
+![](https://github.com/AfifBouzidi/SPRING-SECURITY/blob/master/AuthenticationProvider.png)  
+
 Spring fournit un nombre d’implémentations de l'interface *AuthenticationProvider* tels que : *DaoAuthenticationProvider*, *LdapAuthenticationProvider*...  
  
 
