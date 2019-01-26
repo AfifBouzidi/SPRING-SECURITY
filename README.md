@@ -34,7 +34,14 @@ Chaque *AuthenticationProvider* invoqué soit il retourne un objet *Authenticati
  - *Authentication*  
 Une interface qui représente les informations relatives à un Principal authentifié (ou à authentifier). Si l’authentification est réussie, cet objet est stocké pour pouvoir procéder à l’étape d’autorisation
  
-
+| Méthode  |   |
+|---|---|
+|  java.util.Collection<? extends GrantedAuthority>	getAuthorities() |retourne la liste des droits de l’utilisateur   |
+| java.lang.Object	getCredentials()  |retourne les informations d’identification (mot de passe)   |
+| 	java.lang.Object	getDetails()  | retourne des informations additionnelles (mail,@ip...)  |
+|  	java.lang.Object	getPrincipal()| retourne le Principal l’utilisateur identifié  |
+|   boolean	isAuthenticated()|  est-ce que le Principal est authentifié ou non  |
+|  void	setAuthenticated(boolean isAuthenticated)| valider ou non l’authentification  |
 
 
 
