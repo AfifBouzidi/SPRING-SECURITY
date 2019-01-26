@@ -76,3 +76,7 @@ Représente une interface pour le codage des mots de passe, l’implémentation 
 
 ![](https://github.com/AfifBouzidi/SPRING-SECURITY/blob/master/PasswordEncoder.PNG)  
 ref: https://www.researchgate.net
+
+### Context de sécurité
+
+### Chaîne de filtres de sécurité
