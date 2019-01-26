@@ -69,4 +69,4 @@ La classe User représente l'implémentation fourni par Spring de l'interface Us
 - *GrantedAuthority*  
 Cette interface représente une autorité accordée à un Principal, Spring fournit une implémentation: SimpleGrantedAuthority où le rôle  est une simple chaîne de caractère. 
 
-### encodage de mots de passe
+### Encodage de mots de passe
