@@ -1,0 +1,12 @@
+
+1- first step : get the authorization token:
+post method : http://localhost:8080/api/signin
+with content: 
+{
+"username":"admin",
+"password":"admin@123"
+}
+
+2- second step: add  in the header Authorization
+Bearer token and invoke the service
+http://localhost:8080/api/greetings
