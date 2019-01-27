@@ -123,5 +123,15 @@ Comprendre l’autorisation via Spring sécurité revient à déterminer les res
 - *AccessDecisionVoter*
 - *RoleVoter*
 - *AuthenticatedVoter*
-- *ConfigAttribute*
-- *SecurityConfig*
+
+Le AccessDecisionManager est composé avec un ou plusieurs votants prenant une décision d'accès. Un votant encapsule la logique d'autoriser/refuser l'utilisateur de consulter la ressource. Spring fournit trois types de stratégies pour accorder l’accès :  
+
+- AffirmativeBased : au moins un votant doit voter pour accorder l'accès (la stratégie utilisée par défaut)
+- ConsensusBased : la majorité des votants doivent voter pour accorder l'accès 
+- UnanimousBased : tous les votants doivent voter pour s'abstenir ou accorder l'accès (aucun votant ne vote pour refuser l'accès) 
+
+Spring fournit deux implémentations pour l’interface AccessDecisionVoter :
+- RoleVoter accorde l'accès si l'utilisateur possède le rôle requis pour accéder à la ressource (le rôle doit commencer par le préfixe « ROLE_»)
+- AuthenticatedVoter est utilisé pour différencier les utilisateurs anonymes, authentifiés entièrement et authentifiés Remember-me.
+
+
