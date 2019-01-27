@@ -107,5 +107,8 @@ Représente une interface pour le codage des mots de passe, l’implémentation 
 ref: https://www.researchgate.net
 
 ### Context de sécurité
+- *SecurityContextHolder*  
+La responsabilité principale de cette classe est de stocker les détails du Principal en interaction avec l'application. Par exemple on peut utiliser le bloc de code suivant pour obtenir le nom de l’utilisateur actuellement authentifié : ```SecurityContextHolder.getContext().getAuthentication().getPrincipal()```  
+L’accès au contexte de sécurité est thread-safe, le SecurityContextHolder utilise un ThreadLocal pour stocker les  détails, ce qui signifie que le contexte de sécurité est toujours disponible pour les méthodes du même thread d'exécution.
 
  ## L’autorisation
