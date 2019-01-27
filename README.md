@@ -73,7 +73,7 @@ Une interface qui représente les informations relatives à un Principal authent
 |  void	setAuthenticated(boolean isAuthenticated)| valider ou non l’authentification  |
 
 ### Chargement de détail d’un Principal  
-Pour pouvoir construire les objets Authentication chaque Provider d’authentification doit avoir un service pour charger les détails d’un Principal. Par exemple le DaoAuthenticationProvider doit accéder à un base de donnée, le LdapAuthenticationProvider doit accéder un annuaire LDAP...   
+Pour pouvoir construire les objets Authentication chaque Provider d’authentification doit avoir un service pour charger les détails d’un Principal. Par exemple le DaoAuthenticationProvider doit accéder à une base de données, le LdapAuthenticationProvider doit accéder un annuaire LDAP...   
 
 
  - *UserDetailsService*
