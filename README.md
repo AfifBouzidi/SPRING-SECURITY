@@ -8,7 +8,7 @@ Spring Security est un Framework qui permet de sécuriser principalement les app
 Spring security s’appuie sur une chaine de filtres dont DelegatingFilterProxy  représente le point d’entrée, il intercepte les requêtes http et déclenche les services d’authentification et d’autorisation. DelegatingFilterProxy doit être déclaré dans le web.xml et sa responsabilité consiste à déléguer le traitement des requêtes http au bean spring FilterChainProxy  
 
 ![](https://github.com/AfifBouzidi/SPRING-SECURITY/blob/master/filterChainProxy.PNG)  
-ref: https://www.slideshare.net  
+
 Selon le modèle d’authentification, plusieurs filtres sont ajoutés à la chaine par exemple    
 
 
@@ -103,7 +103,7 @@ Généralement et pour des raisons de sécurité le mot de passe n'est pas stock
 Représente une interface pour le codage des mots de passe, l’implémentation recommandée par Spring est la classe BCryptPasswordEncoder 
 
 ![](https://github.com/AfifBouzidi/SPRING-SECURITY/blob/master/PasswordEncoder.PNG)  
-ref: https://www.researchgate.net
+
 
 ### Context de sécurité
 - *SecurityContextHolder*  
@@ -144,4 +144,14 @@ The two main services Authentication and Authorization are shown in the diagram 
 
 ![](https://github.com/AfifBouzidi/SPRING-SECURITY/blob/master/spring_security_overview.png)
 
-ref: https://terasolunaorg.github.io
+
+
+
+## Références  
+
+https://docs.spring.io
+https://www.redfroggy.fr
+https://www.javacodegeeks.com
+https://terasolunaorg.github.io
+https://www.researchgate.net
+https://www.slideshare.net 
