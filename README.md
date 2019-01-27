@@ -6,6 +6,7 @@ Spring Security est un Framework qui permet de sécuriser principalement les app
 
 ## Chaîne de filtres de sécurité  
 Spring security s’appuie sur une chaine de filtres dont le filtre DelegatingFilterProxy  représente le point d’entrée, il intercepte les requêtes http et déclenche les services d’authentification et d’autorisation. DelegatingFilterProxy doit être déclaré dans le web.xml et sa responsabilité consiste à déléguer le traitement des requêtes http au bean spring FilterChainProxy  
+
 ![](https://github.com/AfifBouzidi/SPRING-SECURITY/blob/master/filterChainProxy.PNG)  
 ref: https://www.slideshare.net  
 Selon le modèle d’authentification, plusieurs filtres sont ajoutés à la chaine par exemple    
