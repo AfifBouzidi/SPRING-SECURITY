@@ -124,6 +124,11 @@ Comprendre l’autorisation via Spring sécurité revient à déterminer les res
 - *RoleVoter*
 - *AuthenticatedVoter*
 
+L’une des étapes de la configuration de la sécurité consiste à spécifier un pattern d'URL et les rôles que l'utilisateur doit avoir pour accéder à ces URL.  Spring transmet toutes ces informations en tant que métadonnées dans FilterSecurityInterceptor, qui à son tour utilise le AccessDecisionManager pour contrôler l’accès aux ressources.
+
+![](https://github.com/AfifBouzidi/SPRING-SECURITY/blob/master/AccessDecisionManager.png)  
+
+
 Le AccessDecisionManager est composé avec un ou plusieurs votants prenant une décision d'accès. Un votant encapsule la logique d'autoriser/refuser l'utilisateur de consulter la ressource. Spring fournit trois types de stratégies pour accorder l’accès :  
 
 - AffirmativeBased : au moins un votant doit voter pour accorder l'accès (la stratégie utilisée par défaut)
