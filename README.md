@@ -149,9 +149,15 @@ The two main services Authentication and Authorization are shown in the diagram 
 
 ## Références  
 
-https://docs.spring.io
-https://www.redfroggy.fr
-https://www.javacodegeeks.com
-https://terasolunaorg.github.io
-https://www.researchgate.net
-https://www.slideshare.net 
+https://docs.spring.io  
+
+https://www.redfroggy.fr  
+
+https://www.javacodegeeks.com  
+
+https://terasolunaorg.github.io  
+
+https://www.researchgate.net  
+
+https://www.slideshare.net   
+
