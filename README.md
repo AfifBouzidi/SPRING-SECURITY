@@ -143,3 +143,5 @@ Spring fournit deux implémentations pour l’interface AccessDecisionVoter :
 The two main services Authentication and Authorization are shown in the diagram below  
 
 ![](https://github.com/AfifBouzidi/SPRING-SECURITY/blob/master/spring_security_overview.png)
+
+ref: https://terasolunaorg.github.io
