@@ -107,3 +107,5 @@ Représente une interface pour le codage des mots de passe, l’implémentation 
 ref: https://www.researchgate.net
 
 ### Context de sécurité
+
+ ## L’autorisation
