@@ -45,7 +45,6 @@ Comprendre l’authentification via Spring sécurité revient à déterminer les
 - *PasswordEncoder*
 - *SecurityContext*
 - *SecurityContextHolder* 
-- *Security Filter Chain*
 
 ### L’authentification Manager et l’authentification Provider 
 
@@ -109,6 +108,9 @@ ref: https://www.researchgate.net
 ### Context de sécurité
 - *SecurityContextHolder*  
 La responsabilité principale de cette classe est de stocker les détails du Principal en interaction avec l'application. Par exemple on peut utiliser le bloc de code suivant pour obtenir le nom de l’utilisateur actuellement authentifié : ```SecurityContextHolder.getContext().getAuthentication().getPrincipal()```  
-L’accès au contexte de sécurité est thread-safe, le SecurityContextHolder utilise un ThreadLocal pour stocker les  détails, ce qui signifie que le contexte de sécurité est toujours disponible pour les méthodes du même thread d'exécution.
+L’accès au contexte de sécurité est thread-safe, le SecurityContextHolder utilise un ThreadLocal pour stocker les  détails, ce qui signifie que le contexte de sécurité est toujours disponible pour les méthodes du même thread d'exécution.  
+
+- *SecurityContext*
+Interface définissant les informations de sécurité associées au thread d'exécution en cours.
 
  ## L’autorisation
