@@ -22,7 +22,7 @@ Selon le modèle d’authentification, plusieurs filtres sont ajoutés à la cha
   
 1- Construction de l’objet Authentication  
 
-2- Invoquer la méthode authenticate de l’AuthenticationManager   
+2- Invocation de la méthode authenticate de l’AuthenticationManager   
 
 3- Si l’authentification est un succès, ajout de l’objet Authentication dans le contexte de securité  
 
