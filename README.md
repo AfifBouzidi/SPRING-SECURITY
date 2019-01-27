@@ -114,3 +114,14 @@ L’accès au contexte de sécurité est thread-safe, le SecurityContextHolder u
 Interface définissant les informations de sécurité associées au thread d'exécution en cours.
 
  ## L’autorisation
+Comprendre l’autorisation via Spring sécurité revient à déterminer les responsabilités des classes, respectivement des interfaces, suivantes :
+- *AccessDecisionManager*
+- *AbstractAccessDecisionManager*
+- *AffirmativeBased*
+- *ConsensusBased*
+- *UnanimousBased*
+- *AccessDecisionVoter*
+- *RoleVoter*
+- *AuthenticatedVoter*
+- *ConfigAttribute*
+- *SecurityConfig*
