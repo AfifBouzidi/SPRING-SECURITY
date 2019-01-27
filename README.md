@@ -26,6 +26,10 @@ Selon le modèle d’authentification, plusieurs filtres sont ajoutés à la cha
 
 3- Si l’authentification est un succès, ajout de l’objet Authentication dans le contexte de securité  
 
+Autres filtres :  
+
+- ExceptionTranslationFilter : intercepte toutes les exceptions Spring Security pour retourner une erreur HTTP ou lancer un autre AuthenticationEntryPoint. 
+- FilterSecurityInterceptor , protége les URI et génère des exceptions lorsque l'accès est refusé, il utilise un AuthenticationManager et un AccessDecisionManager pour gerer les services d’autorisation 
 
 
 ## L’authentification
