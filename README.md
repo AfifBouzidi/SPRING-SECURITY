@@ -5,7 +5,9 @@ Spring Security est un Framework qui permet de sécuriser principalement les app
 - *Autorisation* : il s'agit de la vérification  des droits accordés à un principal. Les niveaux d’autorisations fournis par spring sont : autorisations basées sur les URLS, l’invocation des méthodes et  l’invocation des objets (ACL)
 
 ## Chaîne de filtres de sécurité  
-Spring security s’appuie sur une chaine de filtres dont le filtre DelegatingFilterProxy  représente le point d’entrée, il intercepte les requêtes http et déclenche les services d’authentification et d’autorisation. DelegatingFilterProxy doit être déclaré dans le web.xml et sa responsabilité consiste à déléguer le traitement des requêtes http au bean spring FilterChainProxy 
+Spring security s’appuie sur une chaine de filtres dont le filtre DelegatingFilterProxy  représente le point d’entrée, il intercepte les requêtes http et déclenche les services d’authentification et d’autorisation. DelegatingFilterProxy doit être déclaré dans le web.xml et sa responsabilité consiste à déléguer le traitement des requêtes http au bean spring FilterChainProxy  
+![](https://github.com/AfifBouzidi/SPRING-SECURITY/blob/master/filterChainProxy.PNG)  
+https://www.slideshare.net
 
 ## L’authentification
 Comprendre l’authentification via Spring sécurité revient à déterminer les responsabilités des classes, respectivement des interfaces, suivantes :
