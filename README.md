@@ -139,6 +139,15 @@ Spring fournit deux implémentations pour l’interface AccessDecisionVoter :
 - RoleVoter accorde l'accès si l'utilisateur possède le rôle requis pour accéder à la ressource (le rôle doit commencer par le préfixe « ROLE_»)
 - AuthenticatedVoter est utilisé pour différencier les utilisateurs anonymes, authentifiés entièrement et authentifiés Remember-me.
 
+La méthode vote de l'interface AccessDecisionVoter retourne trois valeurs possibles  
+
+-	ACCESS_GRANTED :  réponse positive   
+
+-	ACCESS_DENIED: réponse negative   
+
+-	ACCESS_ABSTAIN: voter pour s'abstenir  
+
+
 ## Spring Security Overview
  
 
