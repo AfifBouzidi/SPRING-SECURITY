@@ -18,7 +18,7 @@ Selon le modèle d’authentification, plusieurs filtres sont ajoutés à la cha
 |  HTTP DIGEST | DigestAuthenticationFilter  |
 |Form Based Login 	|UsernamePasswordAuthenticationFilter   |
   
-  Les filtres exécutent les actions suivantes:  
+  Les filtres d'authentication exécutent les actions suivantes:  
   
 1- Construction de l’objet Authentication  
 
