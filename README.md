@@ -29,7 +29,7 @@ Selon le modèle d’authentification, plusieurs filtres sont ajoutés à la cha
 Autres filtres :  
 
 - ExceptionTranslationFilter : intercepte toutes les exceptions Spring Security pour retourner une erreur HTTP ou lancer un autre AuthenticationEntryPoint. 
-- FilterSecurityInterceptor , protége les URI et génère des exceptions lorsque l'accès est refusé, il utilise un AuthenticationManager et un AccessDecisionManager pour gerer les services d’autorisation 
+- FilterSecurityInterceptor , protége les URI et génère des exceptions lorsque l'accès est refusé, il utilise un AuthenticationManager et un AccessDecisionManager pour gérer les services d’autorisation. 
 
 
 ## L’authentification
