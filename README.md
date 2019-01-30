@@ -151,7 +151,7 @@ La méthode vote de l'interface AccessDecisionVoter retourne trois valeurs possi
 ## Spring Security Overview
  
 
-![](https://github.com/AfifBouzidi/SPRING-SECURITY/blob/master/spring_security_overview.png)
+![](https://github.com/AfifBouzidi/SPRING-SECURITY/blob/master/overview.png)
 
 
 
